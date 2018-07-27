@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="much_confirm">确定</string>
+    <string name="much_goback">返回</string>
+
+    <!-- 首页菜单标题 -->
+    <string name="much_store_recommend_title">推荐</string>
+    <string name="much_store_category_title">分类</string>
+    <string name="much_store_collection_title">合集</string>
+    <string name="much_store_search_title">搜索</string>
+    <string name="much_store_manage_title">下载管理</string>
+    <string name="much_store_user_title">我的</string>
+    <string name="much_free_app_store_title">摩奇游戏圈</string>
+    <string name="much_store_rank_title">排行</string>
+    <string name="much_store_circle_title">摩奇圈</string>
+    <string name="much_store_gift_bag_title">礼包</string>
+
+    <string name="much_folder_name_common">常用</string>
+    <string name="much_folder_name_tool">工具</string>
+    <string name="much_folder_name_attachment">附属功能</string>
+
+    <string name="no_service_tip">此功能暂未开放,敬请期待!</string>
+    <string name="no_support_tip">此应用暂不支持按键DIY功能!</string>
+    <string name="snail_create_shortcut_title">创建快捷图标</string>
+
+    <!-- Preferences -->
+    <!-- Predictive apps -->
+    <string name="predictive_apps_title">预测应用</string>
+    <string name="predictive_apps_summary_on">您最喜欢的应用将会出现在应用抽屉的顶部</string>
+    <string name="predictive_apps_summary_off">您最喜欢的应用将不会出现应用抽屉的顶部</string>
+
+    <string name="settings_category_icons">图标设置</string>
+    <string name="settings_icon_force_adaptive_title">强制自适应图标</string>
+    <string name="settings_icon_force_adaptive_desc_on">自定义形状的图标将加上边框</string>
+    <string name="settings_icon_force_adaptive_desc_off">自定义形状的图标将没有边框</string>
+</resources>

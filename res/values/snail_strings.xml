@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="much_confirm">Confirm</string>
+    <string name="much_goback">Cancel</string>
+
+    <!-- 首页菜单标题 -->
+    <string name="much_store_recommend_title">Recommend</string>
+    <string name="much_store_category_title">Category</string>
+    <string name="much_store_collection_title">Album</string>
+    <string name="much_store_search_title">Search</string>
+    <string name="much_store_manage_title">Manage</string>
+    <string name="much_store_user_title">User</string>
+    <string name="much_free_app_store_title">Much-Circle</string>
+    <string name="much_store_rank_title">Rank</string>
+    <string name="much_store_circle_title">Circle</string>
+    <string name="much_store_gift_bag_title">GiftBag</string>
+
+    <string name="much_folder_name_common">common</string>
+    <string name="much_folder_name_tool">tool</string>
+    <string name="much_folder_name_attachment">attachment</string>
+
+    <string name="no_service_tip">This function is not open yet, please look forward to it!</string>
+    <string name="no_support_tip">This app do not support DIY!</string>
+    <string name="snail_create_shortcut_title">Create shortcut icon</string>
+
+    <!-- Predictive apps -->
+    <string name="predictive_apps_title">Predictive apps</string>
+    <string name="predictive_apps_summary_on">Your favorite apps will appear at the top of the drawer</string>
+    <string name="predictive_apps_summary_off">Your favorite apps won\'t appear at the top of the drawer</string>
+
+    <string name="settings_category_icons">Icon settings</string>
+    <string name="settings_icon_force_adaptive_title">Force adaptive icons</string>
+    <string name="settings_icon_force_adaptive_desc_on">Icons with a custom shape will be boxed</string>
+    <string name="settings_icon_force_adaptive_desc_off">Icons with a custom shape will not be boxed</string>
+</resources>

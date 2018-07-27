@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="snail_custom_badge_margin_right">25dp</dimen>
+    <dimen name="snail_custom_badge_margin_top">10dp</dimen>
+
+    <!-- folder icon -->
+    <dimen name="folder_icon_item_padding_top">13.5dp</dimen>
+    <dimen name="folder_icon_item_padding_left">4dp</dimen>
+
+    <dimen name="app_icon_size">62dp</dimen>
+</resources>

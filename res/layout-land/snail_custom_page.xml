@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.snail.custompage.CustomPage xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+	<!-- 添加paddingLeft解决横屏时自定义靠左问题 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingTop="17dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_free_app_store" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/much_free_app_store_title"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="656dp"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="450dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/store_bg_selector"
+                        android:focusable="true"
+                        android:padding="4dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:duplicateParentState="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/store_banner_default" />
+
+                        <com.android.launcher3.snail.custompage.AutoScrollViewPager
+                            android:id="@+id/storeRecommendViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="false" />
+
+                        <ImageView
+                            android:id="@+id/left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:alpha="0.2"
+                            android:duplicateParentState="true"
+                            android:padding="7dp"
+                            android:src="@drawable/auto_page_left_small" />
+
+                        <ImageView
+                            android:id="@+id/right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:alpha="0.2"
+                            android:duplicateParentState="true"
+                            android:padding="7dp"
+                            android:src="@drawable/auto_page_right_small" />
+
+                        <LinearLayout
+                            android:id="@+id/storeRecommendDots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="7dp"
+                            android:orientation="horizontal" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/store_ad_right_1"
+                            android:layout_width="198dp"
+                            android:layout_height="98dp"
+                            android:background="@drawable/store_bg_selector"
+                            android:focusable="true"
+                            android:padding="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/store_ad_small1" />
+
+                        <ImageView
+                            android:id="@+id/store_ad_right_2"
+                            android:layout_width="198dp"
+                            android:layout_height="98dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/store_bg_selector"
+                            android:focusable="true"
+                            android:padding="4dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/store_ad_small2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="24dp" >
+
+                    <include
+                        android:id="@+id/store_recommend"
+                        layout="@layout/snail_store_item" />
+
+                    <include
+                        android:id="@+id/store_category"
+                        layout="@layout/snail_store_item" />
+
+                    <include
+                        android:id="@+id/store_collection"
+                        layout="@layout/snail_store_item" />
+
+                    <include
+                        android:id="@+id/store_search"
+                        layout="@layout/snail_store_item" />
+
+                    <include
+                        android:id="@+id/store_manager"
+                        layout="@layout/snail_store_item" />
+
+                    <include
+                        android:id="@+id/store_user"
+                        layout="@layout/snail_store_item" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</com.android.launcher3.snail.custompage.CustomPage>

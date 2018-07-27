@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="custom_page_pressed_color">#4E000000</color>
+    <color name="focused_color_normal">#FFB300</color>
+	<color name="folder_items_text_color">#FFF</color>
+
+	<!-- overview -->
+	<color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="vpi_indicator_white">#ffffff</color>
+     <color name="white_first_transparency">#7FFFFFFF</color>
+    <color name="white_second_transparency">#4CFFFFFF</color>
+
+    <color name="much_folder_add_app_title_text_color">#4AB228</color>
+    <color name="much_folder_add_app_line_color">#E0E0E0</color>
+    <color name="much_folder_add_app_text_color">#414141</color>
+</resources>

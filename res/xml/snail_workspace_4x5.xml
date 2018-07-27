@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
+    <appwidget
+        launcher:className="com.android.alarmclock.DigitalAppWidgetProvider"
+        launcher:packageName="com.android.deskclock"
+        launcher:screen="1"
+        launcher:spanX="4"
+        launcher:spanY="3"
+        launcher:x="0"
+        launcher:y="0" />
+
+    <favorite
+        launcher:className="com.android.settings.Settings"
+        launcher:packageName="com.android.settings"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="3" />
+    <favorite
+        launcher:className="com.android.camera.CameraLauncher"
+        launcher:packageName="com.mediatek.camera"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="3" />
+    <favorite
+        launcher:className="com.android.gallery3d.app.GalleryActivity"
+        launcher:packageName="com.android.gallery3d"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="3" />
+    <favorite
+        launcher:className="com.ireadygo.app.systemupgrade.activity.UpgradeHomeActivity"
+        launcher:packageName="com.ireadygo.app.systemupgrade"
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="3" />
+
+    <folder
+        launcher:container="-100"
+        launcher:screen="1"
+        launcher:title="@string/much_folder_name_common"
+        launcher:x="4"
+        launcher:y="0" >
+        <favorite
+            launcher:className="com.android.calculator2.Calculator"
+            launcher:packageName="com.android.calculator2"
+            launcher:screen="0"
+            launcher:x="0"
+            launcher:y="0" />
+        <favorite
+            launcher:className="com.android.quicksearchbox.SearchActivity"
+            launcher:packageName="com.android.quicksearchbox"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="0" />
+        <favorite
+            launcher:className="com.android.calendar.AllInOneActivity"
+            launcher:packageName="com.android.calendar"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="1" />
+        <favorite
+            launcher:className="com.android.documentsui.LauncherActivity"
+            launcher:packageName="com.android.documentsui"
+            launcher:screen="0"
+            launcher:x="3"
+            launcher:y="0" />
+        <favorite
+            launcher:className="com.android.fmradio.FmMainActivity"
+            launcher:packageName="com.android.fmradio"
+            launcher:screen="0"
+            launcher:x="0"
+            launcher:y="1" />
+        <favorite
+            launcher:className="com.mediatek.videoplayer.MovieListActivity"
+            launcher:packageName="com.mediatek.videoplayer"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="1"/>
+        <favorite
+            launcher:className="com.mediatek.filemanager.FileManagerOperationActivity"
+            launcher:packageName="com.mediatek.filemanager"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="1"/>
+    </folder>
+    <favorite
+        launcher:className="com.android.deskclock.DeskClock"
+        launcher:packageName="com.android.deskclock"
+        launcher:screen="1"
+        launcher:x="4"
+        launcher:y="1"/>
+    <favorite
+        launcher:className="com.ireadygo.app.key.ui.KeyLayoutActivity"
+        launcher:packageName="com.ireadygo.app.keylayout"
+        launcher:screen="1"
+        launcher:x="4"
+        launcher:y="2"/>
+    <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+    <!-- Dialer, Contacts, [All Apps], Messaging, Browser -->
+    <resolve
+        launcher:container="-101"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0" >
+        <favorite launcher:uri="#Intent;action=android.intent.action.DIAL;end" />
+        <favorite launcher:uri="tel:123" />
+        <favorite launcher:uri="#Intent;action=android.intent.action.CALL_BUTTON;end" />
+
+        <favorite
+            launcher:packageName="com.android.dialer"
+            launcher:className="com.android.dialer.DialtactsActivity" />
+    </resolve>
+
+    <favorite
+        launcher:packageName="com.android.contacts"
+        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:container="-101"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0" />
+    <favorite
+        launcher:className="com.ireadygo.app.muchnotes.HomeActivity"
+        launcher:container="-101"
+        launcher:packageName="com.ireadygo.app.muchnotes"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="0" />
+    <resolve
+        launcher:container="-101"
+        launcher:screen="3"
+        launcher:x="3"
+        launcher:y="0" >
+        <favorite
+            launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
+        <favorite launcher:uri="sms:" />
+        <favorite launcher:uri="smsto:" />
+        <favorite launcher:uri="mms:" />
+        <favorite launcher:uri="mmsto:" />
+
+        <favorite
+            launcher:packageName="com.android.mms"
+            launcher:className="com.android.mms.ui.ConversationList" />
+    </resolve>
+    
+    <resolve
+        launcher:container="-101"
+        launcher:screen="4"
+        launcher:x="4"
+        launcher:y="0" >
+        <favorite
+            launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end" />
+        <favorite launcher:uri="http://www.example.com/" />
+
+        <favorite
+            launcher:packageName="com.android.browser"
+            launcher:className="com.android.browser.BrowserActivity" />
+    </resolve>
+
+</favorites>
